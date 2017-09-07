@@ -1,5 +1,55 @@
+.site-wrap {
+	text-align: center;
+	background: #000;
+	overflow: scroll;
+}
+.homepage-wrap {
+	text-align: center;
+	padding: 15% 0;
+	background: #046a38;
+	height: 100vh;
+}
 h1 {
 	text-align: center;
+	color: #fff;
+}
+
+h2 {
+	margin-bottom: 15%;
+	color: #fff;
+}
+
+h3 {
+	font-size: 24px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+
+.homepage-block {
+	position: relative;
+	background-color: rgba(255,255,165,0.9);
+	height: 250px;
+}
+
+.pin-top-left {
+	position: absolute;
+	top:-5px;
+	left: -30px;
+	width: 20%;
+}
+
+.pen-bottom-right {
+	position: absolute;
+	bottom:-5px;
+	left: -50px;
+	width: 50%;
+}
+
+.bottom {
+	margin-top: 25%;
 }
 span {
 	margin: 10px 0;
