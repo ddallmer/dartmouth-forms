@@ -36,9 +36,10 @@ a {
 .homepage-block {
 	font-family: 'Indie Flower', cursive;
 	position: relative;
-	background-color: rgba(255,255,165,0.9);
+	background-image: url(/images/nb-paper-2.png);
+	background-size: cover;
+	background-position: center;
 	height: 250px;
-	box-shadow: -6px 6px 3px #333;
 }
 
 .pin-top-left {
