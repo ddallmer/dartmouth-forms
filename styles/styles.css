@@ -34,12 +34,17 @@ a {
 }
 
 .homepage-block {
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Kalam', cursive;
 	position: relative;
-	background-image: url(/images/nb-paper-2.png);
+	background-image: url(/images/Lined-Paper-Texture.png);
 	background-size: cover;
 	background-position: center;
 	height: 250px;
+	box-shadow: -5px 10px 5px #333;
+}
+
+.homepage-block.alumni {
+	height: 350px;
 }
 
 .pin-top-left {
@@ -86,7 +91,7 @@ form {
 	border: none;
 	border-bottom: 1px dotted #000;
 	padding: 0;
-	font-family: 'Indie Flower', cursive;
+	font-family: 'Kalam', cursive;
 }
 
 .faculty-member, .quality {
