@@ -98,6 +98,10 @@ form {
 	width: 170px;
 }
 
+.long {
+	width: 250px;
+}
+
 
 .name {
 	display: block;
