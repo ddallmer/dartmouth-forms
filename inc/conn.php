@@ -5,7 +5,7 @@ DATABASE CONNECTION
 $servername = "localhost";
 $username = "mydartmo_forms";
 $password = "Q;sco~ey9Iw-";
-$dbname = "dartmouth_forms";
+$dbname = "mydartmo_forms";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 if ($conn->connect_error) {
