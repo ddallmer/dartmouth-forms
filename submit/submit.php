@@ -1,5 +1,4 @@
 <?php
-  echo "<pre>";
   require_once('../inc/conn.php');
 
   /*
@@ -34,3 +33,5 @@
   if ($conn->multi_query($sql) !== TRUE) {
     die("Error: " . $sql . "<br>" . $conn->error);
   }
+
+  header("Location: ../thank-you.html");
