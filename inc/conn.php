@@ -3,8 +3,8 @@
 DATABASE CONNECTION
 */
 $servername = "localhost";
-$username = "dartmouth_forms";
-$password = "abcdefg";
+$username = "mydartmo_forms";
+$password = "Q;sco~ey9Iw-";
 $dbname = "dartmouth_forms";
 $conn = new mysqli($servername, $username, $password, $dbname);
 
