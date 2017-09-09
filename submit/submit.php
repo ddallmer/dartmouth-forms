@@ -6,9 +6,9 @@
   INSERT INTO form_submissions TABLE
   */
   $sql = 'INSERT INTO form_submissions (submission_fname,submission_lname,submission_form_type) VALUES (
-      "'.$_POST['NameFirst'].'",
-      "'.$_POST['NameLast'].'",
-      "'.$_POST['form-type'].'"
+      "'.$conn->real_escape_string( $_POST['NameFirst'] ).'",
+      "'.$conn->real_escape_string( $_POST['NameLast'] ).'",
+      "'.$conn->real_escape_string( $_POST['form-type'] ).'"
   )';
 
   if ($conn->query($sql) === TRUE) {
@@ -24,21 +24,13 @@
   foreach($_POST as $name => $val) {
     if($name != 'NameFirst' && $name != 'NameLast' && $name != 'form-type') {
       $sql .= 'INSERT INTO submission_data (name,value,submission) VALUES (
-        "'.$name.'",
-        "'.$val.'",
+        "'.$conn->real_escape_string($name).'",
+        "'.$conn->real_escape_string($val).'",
         '.$submission_id.'
       );';
     }
   }
 
-  if ($conn->multi_query($sql) === TRUE) {
-    $submission_id = $conn->insert_id;
-  } else {
+  if ($conn->multi_query($sql) !== TRUE) {
     die("Error: " . $sql . "<br>" . $conn->error);
   }
-
-  echo $sql;
-  print_r($_POST);
-
-
-  echo "</pre>";
