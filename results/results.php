@@ -1,13 +1,16 @@
 <?php
 require_once('../inc/conn.php');
-
+$where = "WHERE submission_data.submission = form_submissions.submission_ID";
+if( isset($_GET['form']) ) {
+  $where .= ' AND submission_form_type = "'.$_GET['form'].'"';
+}
 /*
 SELECT query
 */
 $sql = "
   SELECT *
   FROM form_submissions, submission_data
-  WHERE submission_data.submission = form_submissions.submission_ID
+  $where
   ORDER BY submission_form_type, submission_time, submission_data.id";
 $result = $conn->query($sql);
 
