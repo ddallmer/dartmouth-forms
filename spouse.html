@@ -14,28 +14,28 @@
 
 <body>
 	<h1 class="form-title">Spouse / Significant Other</h1>
-	<form>
+	<form action="submit/submit.php" method="POST">
 		<input type="hidden" name="form-type" value="spouse">
 		<p>Name:</p>
 			<label>
-				<input type="text" class="form-control name" id="alumniNameFirst" placeholder="First">
-				<input type="text" class="form-control name" id="alumniNameLAst" placeholder="Last">
-				
+				<input type="text" class="form-control name" id="alumniNameFirst" name="NameFirst" placeholder="First">
+				<input type="text" class="form-control name" id="alumniNameLast" name="NameLast" placeholder="Last">
+
 			</label>
 		<span><br>Whenever</span>
-		<label for="spouseResponse1"></label><input type="text" class="form-control" id="spouseResponse1" placeholder="spouse/SO name">
+		<label for="spouseResponse1"></label><input type="text" class="form-control" id="spouseResponse1" name="spouseResponse1" placeholder="spouse/SO name">
 		<span> talks about Dartmouth, the first thing</span>
 		<label for="spouseResponse2"></label>
-		<input type="text" class="form-control" id="spouseResponse2" placeholder="he/she">
+		<input type="text" class="form-control" id="spouseResponse2" name="spouseResponse2" placeholder="he/she">
 		<span>talks about is</span>
 		<label for="spouseResponse3"></label>
-		<input type="text" class="form-control" id="spouseResponse3" placeholder="phrase">
+		<input type="text" class="form-control" id="spouseResponse3" name="spouseResponse3" placeholder="phrase">
 		<span>. When <em>I</em> came to Dartmouth for the first time, the thing that struck me most was</span>
 		<label for="spouseResponse4"></label>
-		<input type="text" class="form-control long" id="spouseResponse4" placeholder="noun,attribute,quality">
+		<input type="text" class="form-control long" id="spouseResponse4" name="spouseResponse4" placeholder="noun,attribute,quality">
 		<span>. What I’ve grown to appreciate about Dartmouth is</span>
 		<label for="spouseResponse5"></label>
-		<input type="text" class="form-control long" id="spouseResponse5" placeholder="adjective,attribute,quality">
+		<input type="text" class="form-control long" id="spouseResponse5" name="spouseResponse5" placeholder="adjective,attribute,quality">
 		<span>.</span>
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>

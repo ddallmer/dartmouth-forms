@@ -14,37 +14,37 @@
 
 <body>
 	<h1 class="form-title">Alumni</h1>
-	<form>
+	<form action="submit/submit.php" method="POST">
 		<input type="hidden" name="form-type" value="alumni">
 		<p>Name:</p>
 			<label>
-				<input type="text" class="form-control name" id="alumniNameFirst" placeholder="First">
-				<input type="text" class="form-control name" id="alumniNameLAst" placeholder="Last">
-				
+				<input type="text" class="form-control name" id="alumniNameFirst" name="NameFirst" placeholder="First">
+				<input type="text" class="form-control name" id="alumniNameLast" name="NameLast" placeholder="Last">
+
 			</label>
 		<span><br>When I see the Dartmouth Green, it always reminds me of</span>
-		<label for="alumniResponse1"></label><input type="text" class="form-control long" id="alumniResponse1" placeholder="great Dartmouth experience">
+		<label for="alumniResponse1"></label><input type="text" class="form-control long" name="alumniResponse1" id="alumniResponse1" placeholder="great Dartmouth experience">
 		<span>. I remember </span>
 		<label for="alumniResponse2"></label>
-		<input type="text" class="form-control long" id="alumniResponse2" placeholder="faculty member/classmate/coach">
+		<input type="text" class="form-control long" id="alumniResponse2" name="alumniResponse2" placeholder="faculty member/classmate/coach">
 		<span>, who taught me</span>
 		<label for="alumniResponse3"></label>
-		<input type="text" class="form-control" id="alumniResponse3" placeholder="phrase,noun">
+		<input type="text" class="form-control" id="alumniResponse3" name="alumniResponse3" placeholder="phrase,noun">
 		<span>, and </span>
 		<label for="alumniResponse4"></label>
-		<input type="text" class="form-control" id="alumniResponse4" placeholder="class/title">
+		<input type="text" class="form-control" id="alumniResponse4" name="alumniResponse4" placeholder="class/title">
 		<span>, which introduced me to</span>
 		<label for="alumniResponse5"></label>
-		<input type="text" class="form-control" id="alumniResponse5" placeholder="phrase">
+		<input type="text" class="form-control" id="alumniResponse5" name="alumniResponse5" placeholder="phrase">
 		<span>. I reflect on</span>
 		<label for="alumniResponse6"></label>
-		<input type="text" class="form-control long" id="alumniResponse6" placeholder="the D Plan/Study abroad/experience">
+		<input type="text" class="form-control long" id="alumniResponse6" name="alumniResponse6" placeholder="the D Plan/Study abroad/experience">
 		<span>, which led me to</span>
 		<label for="alumniResponse7"></label>
-		<input type="text" class="form-control" id="alumniResponse7" placeholder="place/activity">
+		<input type="text" class="form-control" id="alumniResponse7" name="alumniResponse7" placeholder="place/activity">
 		<span>, where a lifelong interest in</span>
 		<label for="alumniResponse8"></label>
-		<input type="text" class="form-control" id="alumniResponse8" placeholder="noun/verb">
+		<input type="text" class="form-control" id="alumniResponse8" name="alumniResponse8" placeholder="noun/verb">
 		<span> took root.</span>
 		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
