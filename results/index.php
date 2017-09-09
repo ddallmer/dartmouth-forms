@@ -1,5 +1,5 @@
 <?php
-echo "<pre>";
+header('Content-Type: application/json');
 require_once('../inc/conn.php');
 
 /*
@@ -18,13 +18,10 @@ COMPILE RESULTS
 $submissions = [];
 if ($result->num_rows > 0) {
   while($row = $result->fetch_assoc()) {
-    print_r($row);
-
     $submissions[$row['submission_ID']]['index'] = $row['submission_form_type'];
     $submissions[$row['submission_ID']]['name'] = $row['submission_fname'].' '.$row['submission_lname'];
     $submissions[$row['submission_ID']][$row['name']] = $row['value'];
   }
 }
 
-print_r($submissions);
-echo $sql;
+echo json_encode( array_values($submissions) );
