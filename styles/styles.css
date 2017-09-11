@@ -2,21 +2,32 @@ body {
 	overflow: scroll;
 }
 
-.container {
-	
-}
 .site-wrap {
 	text-align: center;
 }
 .homepage-wrap {
 	text-align: center;
+	max-width: 1440px;
+
+}
+
+.content-wrap {
 	background: #046a38;
 	padding-bottom: 80px;
+	padding: 0 15px;
 }
 
 .header {
 	background: #000;
 	height: 150px;
+	position: relative;
+}
+
+.logo {
+	width: 100px;
+	position: absolute;
+	top: 15px;
+	left: 15px;
 }
 h1 {
 	text-align: center;
@@ -47,27 +58,26 @@ a {
 .homepage-block {
 	font-family: 'Kalam', cursive;
 	position: relative;
-	background-image: url(/images/Lined-Paper-Texture.png);
+	background-image: url('/images/Lined-Paper-Texture.png');
 	background-size: cover;
 	background-position: center;
 	height: 250px;
 	box-shadow: -5px 10px 5px #333;
+	margin-bottom: 20px;
 }
 
-
-
-.pin-top-left {
-	position: absolute;
-	top:-7px;
-	left: -19px;
-	width: 20%;
+.footer {
+	background: #000;
+	height: 200px;
+	position: relative
 }
 
-.pen-bottom-right {
+.wordmark {
+	width: 300px;
 	position: absolute;
-	bottom:-5px;
-	left: -50px;
-	width: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /********Thank You Styles ********/
@@ -136,12 +146,11 @@ form {
 /******** Responive Styles ********/
 @media (min-device-width: 768px) {
 	body {
-		overflow: hidden;
+
 	}
-	.homepage-wrap {
+	.content-wrap {
 		text-align: center;
-		background: #046a38;
-		height: 100vh;
+		height: calc(100vh - 350px);
 		padding-bottom: 0;
 
 	}
