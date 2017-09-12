@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <title>Spouse / Significant Other</title>
+
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -13,17 +14,21 @@
 </head>
 
 <body>
+	<div class="header">
+		<img src="images/w-logo1.png" alt="Dartmouth logo" class="logo">
+	</div>
 	<h1 class="form-title">Spouse / Significant Other</h1>
 	<form action="submit/submit.php" method="POST">
 		<input type="hidden" name="form-type" value="3">
-		<p>Name:</p>
-			<label>
-				<input type="text" class="form-control name" id="spouseNameFirst" name="NameFirst" placeholder="First" required>
-				<input type="text" class="form-control name" id="spouseNameLast" name="NameLast" placeholder="Last" required>
+		<span>Name:</span>
+		<label>
+			<input type="text" class="form-control name" id="spouseNameFirst" name="NameFirst" placeholder="First" required>
+			<input type="text" class="form-control name" id="spouseNameLast" name="NameLast" placeholder="Last" required>
 
-			</label>
+		</label>
 		<span><br>Whenever</span>
-		<label for="spouseResponse1"></label><input type="text" class="form-control" id="spouseResponse1" name="response1" placeholder="spouse/SO name" required>
+		<label for="spouseResponse1"></label>
+		<input type="text" class="form-control" id="spouseResponse1" name="response1" placeholder="spouse/SO name" required>
 		<span> talks about Dartmouth, the first thing</span>
 		<label for="spouseResponse2"></label>
 		<input type="text" class="form-control" id="spouseResponse2" name="response2" placeholder="he/she" required>
